@@ -30,9 +30,9 @@ namespace MasterDetail.Folder
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<AdrEwid>()
-                .HasMany<AdrEmail>(c => c.AdrEmails)
-                .WithOne(e => e.AdrEwid)
+            modelBuilder.Entity<AdrEmail>()
+                .HasOne<AdrEwid>(c => c.AdrEwid)
+                .WithMany(e => e.AdrEmails)
                 .HasForeignKey(e => e.am_IdAdres);
         }
     }
