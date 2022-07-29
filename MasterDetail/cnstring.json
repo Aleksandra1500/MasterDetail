@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "cnS": "Data Source=.\\sqlexpress;Initial Catalog=Ola;Integrated Security=True"
+  }
+}
